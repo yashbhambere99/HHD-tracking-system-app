@@ -286,6 +286,12 @@ function submitReceive(){
           resetReceiveBtn();
       });
 }
+function resetReceiveBtn(){
+    let btn = document.getElementById("receiveBtn");
+    btn.disabled = false;
+    btn.innerText = "Mark as Received";
+}
+
 
 // ================= DISPATCH SUBMIT =================
 function submitDispatch(){
